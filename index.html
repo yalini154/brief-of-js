@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="greet"> </p>
+    <P id="hour"> </P>
+    <script> 
+        function abc(){
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 10){
+                greeting="good mouring";
+            }
+            else {
+                greeting="good evening";
+            }
+        }
+        document.getElementById("hour").innerHTML=time;
+        document.getElementById("greet").innerHTML=greeting;
+    </script>
+</body>
+</html>
